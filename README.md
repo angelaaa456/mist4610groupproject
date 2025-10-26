@@ -38,6 +38,7 @@ Moving on to another key entity, we have Games. Games are identified by their pr
 
 
 Query 1: Number of Players on Each Team
+
 Description:
 This query shows every team and counts how many players are currently listed on their roster. It joins the Teams and Rosters tables using the teamID to associate players with their teams, then groups the results by each team name.
 
@@ -49,6 +50,7 @@ Roster size directly affects scholarship budgeting, recruiting needs, and practi
 
 
 Query 2: Total Yards per Player
+
 Description:
 Calculates the total number of offensive yards gained by each player across all games using the Statistics table. The query groups by player name and sums their yards column, returning players in descending order of total yardage.
 
@@ -60,6 +62,7 @@ Tracking cumulative yardage helps offensive coordinators evaluate player impact 
 
 
 Query 3: Players Without Recorded Statistics
+
 Description:
 Identifies all players who have not yet recorded any game statistics by checking which player IDs are not present in the Statistics table.
 
@@ -73,6 +76,7 @@ This helps coaching staff and analysts find players who have not appeared in any
 
 
 Query 4: Players with Multiple Recorded Injuries
+
 Description:
 Displays all players who have sustained more than one recorded injury. It joins Players and Injuries using playerID, groups the results by player, and filters using a HAVING clause.
 
@@ -85,6 +89,7 @@ Identifying players with frequent injuries allows medical staff to implement per
 
 
 Query 5: Average Player Weight by Position
+
 Description:
 Finds the average weight of players for each position across all rosters. It joins Rosters and Players and groups the results by position.
 
@@ -98,6 +103,7 @@ Weight and conditioning benchmarks are crucial for maintaining competitiveness. 
 
 
 Query 6: Total Games Played by Each Team
+
 Description:
 Shows the number of total games each team has participated in—both home and away. It joins Teams and Games and counts how many times a team appears as either the home or away team.
 
@@ -109,6 +115,7 @@ Tracking total games played helps administrators measure team activity levels ac
 
 
 Query 7: Current Scholarship Players
+
 Description:
 Lists all players who currently receive full athletic scholarships, ordered alphabetically by name.
 
@@ -120,6 +127,7 @@ Scholarship allocation is one of the largest financial responsibilities for athl
 
 
 Query 8: Longest Recovery Injuries
+
 Description:
 Displays the injuries in the database with the longest reported recovery times, ordered from longest to shortest.
 
@@ -132,6 +140,7 @@ Provides insight into which types of injuries are most severe and time-consuming
 
 
 Query 9: Average Ticket Price per Game
+
 Description:
 Calculates the average price of tickets sold for each game by joining the Games and Tickets tables and grouping results by gameID.
 
@@ -143,6 +152,7 @@ Understanding average ticket prices helps the marketing and sales department ass
 
 
 Query 10: Top 5 Players by Touchdowns Scored
+
 Description:
 Lists the five players with the highest total touchdowns recorded across all games.
 
